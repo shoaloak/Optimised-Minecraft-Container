@@ -4,4 +4,4 @@ build:
 `buildah build -t minecraft .`
 
 start:
-`podman run -ti -p 25565:25565 -v ./minecraft_data:/opt/minecraft minecraft
+`podman run -ti -p 25565:25565 minecraft`
