@@ -2,7 +2,7 @@ FROM ghcr.io/graalvm/jdk:ol9-java17-22.3.0-b2@sha256:3e8aba5280c37d0ea1c4d05b7d0
 
 ARG user=steve
 WORKDIR /opt/minecraft
-COPY minecraft_data/ .
+COPY data/ .
 
 RUN mkdir cache && printf "eula=true" > eula.txt \
 	&& curl -o paper.jar https://api.papermc.io/v2/projects/paper/versions/1.19.3/builds/445/downloads/paper-1.19.3-445.jar \
