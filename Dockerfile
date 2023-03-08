@@ -10,4 +10,4 @@ RUN mkdir cache && printf "eula=true" > eula.txt \
 	&& groupadd -r $user && useradd -r -g $user $user && chown -R $user /opt/minecraft
 EXPOSE 25565/tcp
 USER $user
-CMD java -Xms2G -Xmx6G -jar paper.jar --nogui
+entrypoint ./run.sh
