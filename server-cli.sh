@@ -15,7 +15,7 @@ do
     case $opt in
         "Start")
             echo "Starting MC Server..."
-            podman run -d -p 25565:25565 minecraft
+            podman run -d --cpus=4 --memory=6g -p 25565:25565 minecraft
             break
             ;;
         "Stop")
