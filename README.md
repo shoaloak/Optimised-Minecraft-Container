@@ -8,6 +8,8 @@ build:
 start:
 `podman run -d -p 25565:25565 minecraft`
 
+NOTE: `server-cli.sh` can do shell, RCON, backup, restore
+
 don't forget to open your firewall :')
 ```
 sudo firewall-cmd --zone=public --add-port=25565/tcp --permanent
