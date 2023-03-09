@@ -9,6 +9,8 @@ start:
 `podman run -d -p 25565:25565 minecraft`
 
 `server-cli.sh` can start, stop, backup, etc.
+crontab can be useful for automatic backupping, e.g.:
+`*/30 * * * * cd /home/shoaloak/src/shoaloak-minecraft && ./server-cli.sh backup`
 
 
 ## Troubleshooting
