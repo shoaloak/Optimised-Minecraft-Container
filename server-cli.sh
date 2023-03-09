@@ -56,12 +56,10 @@ main() {
             "Shell")
                 echo "Starting shell..."
                 podman exec -it $CONTAINER_ID /bin/bash
-                break
                 ;;
             "RCON")
                 echo "Connecting with RCON..."
                 $RCON_CMD
-                break
                 ;;
             "Backup")
                 backup
