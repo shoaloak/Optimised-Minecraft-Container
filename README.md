@@ -8,13 +8,18 @@ build:
 start:
 `podman run -d -p 25565:25565 minecraft`
 
-NOTE: `server-cli.sh` can do shell, RCON, backup, restore
+`server-cli.sh` can start, stop, backup, etc.
 
+
+## Troubleshooting
 don't forget to open your firewall :')
 ```
 sudo firewall-cmd --zone=public --add-port=25565/tcp --permanent
 sudo firewall-cmd --reload
 ```
+
+if you get `Error: OCI runtime error: crun: the requested cgroup controller `cpu` is not available`, check out [podman docs](https://github.com/containers/podman/blob/main/troubleshooting.md#26-running-containers-with-resource-limits-fails-with-a-permissions-error).
+
 
 ## Plugins
 We use [No Chat Reports](https://www.spigotmc.org/resources/no-chat-reports.102990/).
