@@ -26,3 +26,5 @@ if you get `Error: OCI runtime error: crun: the requested cgroup controller `cpu
 ## Plugins
 We use [No Chat Reports](https://www.spigotmc.org/resources/no-chat-reports.102990/).
 The `paper-workaround` is disabled since [issue](https://github.com/teakivy/NoChatReports/issues/6)
+
+[One Player Sleep](https://www.spigotmc.org/resources/one-player-sleep.31585/), fed up with loggin out
