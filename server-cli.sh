@@ -24,6 +24,7 @@ backup() {
     mv /tmp/$epoch.tar.gz saves/
     $RCON_CMD save-on
     $RCON_CMD "say Done with backup!"
+    find saves/ -type f -mtime +4 -exec rm {} \;
 }
 
 
