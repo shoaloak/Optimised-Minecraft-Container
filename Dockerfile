@@ -1,4 +1,4 @@
-FROM ghcr.io/graalvm/jdk:ol9-java17-22.3.0-b2@sha256:3e8aba5280c37d0ea1c4d05b7d08bf3ff2ae0fb31ee496f6e62729ae741630e7
+FROM ghcr.io/graalvm/jdk:ol9-java17-22.3.2
 
 ARG user=minecraft
 WORKDIR /opt/minecraft
